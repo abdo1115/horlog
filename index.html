@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horloge Digitale</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div id="clock"></div>
+        <hr>
+        <div id="date"></div>
+        <hr>
+        <div id="stopwatch">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        <button id="startStop"><i class="fas fa-play"></i> Start/Stop</button>
+        <button id="reset"><i class="fas fa-redo"></i> Reset</button>
+        <hr>
+        <div class="alarm-container">
+            <label for="alarmTime">Définir l'alarme :</label>
+            <input type="time" id="alarmTime">
+            <button id="setAlarm" class="alarm-button"><i class="fas fa-bell"></i> Définir l'alarme</button>
+        </div>
+        <div id="alarmMessage" style="display: none;">⏰ Alarme !</div>
+        <audio id="alarmSound" src="C:\Users\Abdyos\Downloads\Horlog\mixkit-digital-clock-digital-alarm-buzzer-992.wav" preload="auto"></audio>
+    </div>
+    <script src="https://literate-cod-pj767j5ww7g4h9wrw.github.dev/workspaces/script.js"></script>
+</body>
+</html>
